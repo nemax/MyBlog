@@ -1,0 +1,2 @@
+hexo deploy -g;
+pause;
