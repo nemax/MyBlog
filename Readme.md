@@ -26,6 +26,12 @@ README
 
 4. 删除目录下的source/_posts/hello-world.md，该文件是hexo init命令留下的默认文章。
 
+5. 提交变化到GithubPage需要安装如下组件, 否则提交时会提示找不到git
+
+   ```shell
+   npm i hexo-developer-git --save
+   ```
+
 
 
 经过以上几步，本地环境已经准备好，具体使用请参考这篇文章:
