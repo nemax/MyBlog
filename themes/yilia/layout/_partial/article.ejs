@@ -104,6 +104,14 @@
     }) %>
   <% } %>
 
+  <% if (theme.gitalk.enable){ %>
+  <%- partial('post/gitalk', {
+      key: post.slug,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    }) %>
+  <% } %>
+
   <% if (theme.disqus || config.disqus_shortname){ %>
     <section id="comments">
       <div id="disqus_thread"></div>
@@ -129,12 +137,4 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
-<% } %>
-
-<% if (!index && theme.gitalk.enable && post.comments){ %>
-<%- partial('post/gitalk', {
-    key: post.slug,
-    title: post.title,
-    url: config.url+url_for(post.path)
-  }) %>
 <% } %>

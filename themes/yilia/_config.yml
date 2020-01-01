@@ -100,11 +100,11 @@ gitment_oauth:
 #5、Gitalk
 gitalk: 
   enable: true
-  client_id: 6cf75a09ba845df7495e
-  client_secret: d041a8b9167fd9c63777e9d82a0d8bc8bd3d44d1
-  repo: 存储博客评论的仓库地址，可以是存储博客的仓库
-  owner: nemax
-  admin: nemax
+  client_id: '6cf75a09ba845df7495e'
+  client_secret: 'd041a8b9167fd9c63777e9d82a0d8bc8bd3d44d1'
+  repo: 'MyGitmentRepo'
+  owner: 'nemax'
+  admin: 'nemax'
 
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
